@@ -58,7 +58,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="index3.html"  routerLink="" class="brand-link">
       <img src="assets/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
         style="opacity: 0.8;" />
       <span class="brand-text font-weight-light">AdminLTE 3</span>
@@ -72,7 +72,7 @@
           <img src="assets/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
         </div>
         <div class="info" *ngIf="isLoggedIn">
-          <a href="#" class="d-block">{{username}}</a>
+          <a href="#" routerLink="profile" class="d-block">{{username}}</a>
         </div>
       </div>
 
