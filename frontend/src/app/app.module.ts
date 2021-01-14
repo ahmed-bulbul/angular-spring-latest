@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +14,10 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 import { BoardUserComponent } from './board-user/board-user.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { CreateEmployeeComponent } from './employee/create-employee/create-employee.component';
+import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
+import { UpdateEmployeeComponent } from './employee/update-employee/update-employee.component';
+
 
 @NgModule({
   declarations: [
@@ -24,13 +28,18 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     ProfileComponent,
     BoardAdminComponent,
     BoardModeratorComponent,
-    BoardUserComponent
+    BoardUserComponent,
+    CreateEmployeeComponent,
+    EmployeeListComponent,
+    UpdateEmployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+   
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
