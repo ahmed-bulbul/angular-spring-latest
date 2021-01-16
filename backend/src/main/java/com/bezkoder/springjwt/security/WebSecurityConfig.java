@@ -1,8 +1,5 @@
-package com.bulbul.springjwt.security;
+package com.bezkoder.springjwt.security;
 
-import com.bulbul.springjwt.security.jwt.AuthEntryPointJwt;
-import com.bulbul.springjwt.security.jwt.AuthTokenFilter;
-import com.bulbul.springjwt.security.services.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,6 +13,10 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.bezkoder.springjwt.security.jwt.AuthEntryPointJwt;
+import com.bezkoder.springjwt.security.jwt.AuthTokenFilter;
+import com.bezkoder.springjwt.security.services.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity

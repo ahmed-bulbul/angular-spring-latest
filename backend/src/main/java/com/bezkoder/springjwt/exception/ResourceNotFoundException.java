@@ -1,4 +1,4 @@
-package com.bulbul.springjwt.exception;
+package com.bezkoder.springjwt.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

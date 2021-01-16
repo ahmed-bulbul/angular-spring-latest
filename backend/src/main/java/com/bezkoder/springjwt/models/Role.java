@@ -1,4 +1,4 @@
-package com.bulbul.springjwt.models;
+package com.bezkoder.springjwt.models;
 
 import javax.persistence.*;
 
