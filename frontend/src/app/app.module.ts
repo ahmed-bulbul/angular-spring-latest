@@ -17,6 +17,7 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { CreateEmployeeComponent } from './employee/create-employee/create-employee.component';
 import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 import { UpdateEmployeeComponent } from './employee/update-employee/update-employee.component';
+import { EmployeeDetailsComponent } from './employee/employee-details/employee-details.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { UpdateEmployeeComponent } from './employee/update-employee/update-emplo
     BoardUserComponent,
     CreateEmployeeComponent,
     EmployeeListComponent,
-    UpdateEmployeeComponent
+    UpdateEmployeeComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
